@@ -16,3 +16,18 @@ build:
 
 run
 `docker-compose up`
+
+### Docker
+
+build docker image:
+
+```
+docker built -t fastapi_aws .
+
+```
+
+run docker container locally:
+
+```
+docker run -p 8000:8000 -e DATABASE_USER=<user> -e DATABASE_PASSWORD=<password> -e DATABASE_HOST=<host> -e DATABASE_NAME=<database name> fastapi_aws
+```
