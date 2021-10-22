@@ -1,4 +1,4 @@
-## This proyecto is backend practice to get the AWS Certified
+## This proyect is backend practice to get the AWS Certified
 
 ### Steps to get started
 
@@ -22,8 +22,7 @@ run
 build docker image:
 
 ```
-docker built -t fastapi_aws .
-
+docker build -t fastapi_aws .
 ```
 
 run docker container locally:

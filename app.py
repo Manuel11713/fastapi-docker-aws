@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from routes.user import user
+from routes.checkout import checkout_router
 
 
 app = FastAPI(
@@ -12,3 +13,4 @@ app = FastAPI(
     }])
 
 app.include_router(user, prefix="/users")
+app.include_router(checkout_router, prefix="/checkout")
